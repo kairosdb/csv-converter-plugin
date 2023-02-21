@@ -1,0 +1,8 @@
+*.ipr
+*.iws
+*.iml
+target/*
+*/target/*
+out/*
+.idea
+log/*

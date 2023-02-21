@@ -1,0 +1,196 @@
+{
+  "queries": [
+    {
+      "sample_size": 42765,
+      "results": [
+        {
+          "name": "ScanCloud.Plugin.JobCompletedTime.Count",
+          "group_by": [
+            {
+              "name": "tag",
+              "tags": ["service", "environment"],
+              "group": {
+                "service": "clear-api",
+                "environment": "awslab"
+              }
+            }, {
+              "name": "type",
+              "type": "number"
+            }
+          ],
+          "tags": {
+            "application": ["scancloud_plugin"],
+            "datacenter": ["AWSLAB"],
+            "environment": ["awslab"],
+            "host": ["scancloud-plugin-56dcd6c77-khxfh", "scancloud-plugin-bd5d9f7b5-52c8g", "scancloud-plugin-bd5d9f7b5-nh7jl"],
+            "k8s-cluster": ["staging-c15a-labawsuse", "staging-c15b-labawsuse"],
+            "k8s-namespace": ["scancloud"],
+            "plugin": ["authority", "farmd", "parser", "tapad", "tapud"],
+            "pluginCluster": ["default"],
+            "pluginClusterId": ["-1"],
+            "pluginVersion": ["2.0.2.43", "default", "farmd_8.98.532.35"],
+            "pool": ["general"],
+            "scanSize": ["0-128Kb", "128Kb-1Mb", "4Mb-8Mb", "8Mb-32Mb"],
+            "service": ["clear-api"]
+          },
+          "values": [[1676480832968, 2469], [1676532012968, 2883], [1676618352968, 314]]
+        }, {
+          "name": "ScanCloud.Plugin.JobCompletedTime.Count",
+          "group_by": [
+            {
+              "name": "tag",
+              "tags": ["service", "environment"],
+              "group": {
+                "service": "dlp-coordinator",
+                "environment": "awslab"
+              }
+            }, {
+              "name": "type",
+              "type": "number"
+            }
+          ],
+          "tags": {
+            "application": ["scancloud_plugin"],
+            "datacenter": ["AWSLAB"],
+            "environment": ["awslab"],
+            "host": ["scancloud-plugin-7d9f48f568-bsnwt"],
+            "k8s-cluster": ["dev-c15a-labawsuse"],
+            "k8s-namespace": ["scancloud-feature"],
+            "plugin": ["dlp-coordinator", "scancloud-text-extractor", "text_extractor_local"],
+            "pluginCluster": ["default"],
+            "pluginClusterId": ["-1"],
+            "pluginVersion": ["default"],
+            "pool": ["general"],
+            "scanSize": ["0bytes"],
+            "service": ["dlp-coordinator"]
+          },
+          "values": [[1676491825417, 13]]
+        }, {
+          "name": "ScanCloud.Plugin.JobCompletedTime.Count",
+          "group_by": [
+            {
+              "name": "tag",
+              "tags": ["service", "environment"],
+              "group": {
+                "service": "dr-connector-lab",
+                "environment": "awslab"
+              }
+            }, {
+              "name": "type",
+              "type": "number"
+            }
+          ],
+          "tags": {
+            "application": ["scancloud_plugin"],
+            "datacenter": ["AWSLAB"],
+            "environment": ["awslab"],
+            "host": ["scancloud-plugin-56dcd6c77-khxfh", "scancloud-plugin-bd5d9f7b5-52c8g", "scancloud-plugin-bd5d9f7b5-nh7jl"],
+            "k8s-cluster": ["staging-c15a-labawsuse", "staging-c15b-labawsuse"],
+            "k8s-namespace": ["scancloud"],
+            "plugin": ["farmd", "tapad_frs"],
+            "pluginCluster": ["default"],
+            "pluginClusterId": ["-1"],
+            "pluginVersion": ["default", "farmd_8.98.532.35"],
+            "pool": ["general"],
+            "scanSize": ["0-128Kb", "128Kb-1Mb"],
+            "service": ["dr-connector-lab"]
+          },
+          "values": [[1676512271230, 4], [1676535072968, 120]]
+        }, {
+          "name": "ScanCloud.Plugin.JobCompletedTime.Count",
+          "group_by": [
+            {
+              "name": "tag",
+              "tags": ["service", "environment"],
+              "group": {
+                "service": "mde-client",
+                "environment": "awslab"
+              }
+            }, {
+              "name": "type",
+              "type": "number"
+            }
+          ],
+          "tags": {
+            "application": ["scancloud_plugin"],
+            "datacenter": ["AWSLAB"],
+            "environment": ["awslab"],
+            "host": ["scancloud-plugin-56dcd6c77-khxfh", "scancloud-plugin-bd5d9f7b5-52c8g"],
+            "k8s-cluster": ["staging-c15a-labawsuse", "staging-c15b-labawsuse"],
+            "k8s-namespace": ["scancloud"],
+            "plugin": ["dlp-coordinator", "scancloud-text-extractor", "unified_dlp"],
+            "pluginCluster": ["default"],
+            "pluginClusterId": ["-1"],
+            "pluginVersion": ["UDLP-2.0.0", "default"],
+            "pool": ["general"],
+            "scanSize": ["0-128Kb"],
+            "service": ["mde-client"]
+          },
+          "values": [[1676496731230, 33]]
+        }, {
+          "name": "ScanCloud.Plugin.JobCompletedTime.Count",
+          "group_by": [
+            {
+              "name": "tag",
+              "tags": ["service", "environment"],
+              "group": {
+                "service": "mde-proxy-service",
+                "environment": "awslab"
+              }
+            }, {
+              "name": "type",
+              "type": "number"
+            }
+          ],
+          "tags": {
+            "application": ["scancloud_plugin"],
+            "datacenter": ["AWSLAB"],
+            "environment": ["awslab"],
+            "host": ["scancloud-plugin-56dcd6c77-khxfh", "scancloud-plugin-bd5d9f7b5-52c8g", "scancloud-plugin-bd5d9f7b5-nh7jl"],
+            "k8s-cluster": ["staging-c15a-labawsuse", "staging-c15b-labawsuse"],
+            "k8s-namespace": ["scancloud"],
+            "plugin": ["dlp-coordinator", "scancloud-text-extractor", "unified_dlp"],
+            "pluginCluster": ["default"],
+            "pluginClusterId": ["-1"],
+            "pluginVersion": ["UDLP-2.0.0", "default"],
+            "pool": ["general"],
+            "scanSize": ["0-128Kb"],
+            "service": ["mde-proxy-service"]
+          },
+          "values": [[1676481431230, 318], [1676564652968, 30]]
+        }, {
+          "name": "ScanCloud.Plugin.JobCompletedTime.Count",
+          "group_by": [
+            {
+              "name": "tag",
+              "tags": ["service", "environment"],
+              "group": {
+                "service": "oit-service-global-uim-access-ci",
+                "environment": "awslab"
+              }
+            }, {
+              "name": "type",
+              "type": "number"
+            }
+          ],
+          "tags": {
+            "application": ["scancloud_plugin"],
+            "datacenter": ["AWSLAB"],
+            "environment": ["awslab"],
+            "host": ["scancloud-plugin-56dcd6c77-khxfh", "scancloud-plugin-bd5d9f7b5-52c8g", "scancloud-plugin-bd5d9f7b5-nh7jl"],
+            "k8s-cluster": ["staging-c15a-labawsuse", "staging-c15b-labawsuse"],
+            "k8s-namespace": ["scancloud"],
+            "plugin": ["dlp-coordinator", "scancloud-text-extractor", "unified_dlp", "unified_edm", "unified_idm"],
+            "pluginCluster": ["default"],
+            "pluginClusterId": ["-1"],
+            "pluginVersion": ["UDLP-2.0.0", "default"],
+            "pool": ["general"],
+            "scanSize": ["0-128Kb"],
+            "service": ["oit-service-global-uim-access-ci"]
+          },
+          "values": [[1676482271230, 141], [1676570679290, 35], [1676652552968, 21]]
+        }
+      ]
+    }
+  ]
+}
