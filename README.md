@@ -27,7 +27,7 @@ This is added to the root of the query. For example
 
 The plugin supports the following parameters:
 
-* showMetricName - Whether to include a column for the metric name. The default is true.
+* show_metric_name - Whether to include a column for the metric name. The default is true.
 
 Parameters are added to the plugin as additional JSON fields. For example:
 
