@@ -41,7 +41,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Collection;
+import java.util.Date;
+import java.util.TimeZone;
+import java.util.TreeMap;
 
 @PluginName(name = "CsvConverter", description = "Converts response JSON to CSV format")
 public class CsvConverter implements QueryPostProcessingPlugin {

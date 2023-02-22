@@ -17,6 +17,7 @@
 package org.kairosdb.csvconverter;
 
 import com.google.inject.AbstractModule;
+import org.kairosdb.aggregator.GroupByTransformerAggregator;
 
 @SuppressWarnings("unused")
 public class CsvConverterModule extends AbstractModule {
@@ -24,5 +25,6 @@ public class CsvConverterModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(CsvConverter.class);
+        bind(GroupByTransformerAggregator.class);
     }
 }
