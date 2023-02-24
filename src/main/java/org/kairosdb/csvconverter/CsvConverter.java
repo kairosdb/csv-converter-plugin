@@ -123,10 +123,10 @@ public class CsvConverter implements QueryPostProcessingPlugin {
             boolean firstTime = true;
             boolean done = false;
             while (!done) {
-                var nextToken = reader.peek();
+                JsonToken nextToken = reader.peek();
                 if (JsonToken.BEGIN_OBJECT.equals(nextToken)) {
                     Result queryResult = gson.fromJson(reader, Result.class);
-                    var groups = getGroups(queryResult);
+                    TreeMap<String, String> groups = getGroups(queryResult);
                     if (firstTime) {
                         writer.println(createHeader(groups));
                         firstTime = false;

@@ -60,14 +60,14 @@ public class GroupByTransformerAggregator implements Aggregator {
         if (!action.isEmpty() && tagNames.isEmpty()) {
             throw new IllegalArgumentException("TagNames cannot be empty");
         }
-        var groupBys = dataPointGroup.getGroupByResult();
-        var modifiedGroupBys = groupBys.stream().map(this::convert).collect(Collectors.toList());
+        List<GroupByResult> groupBys = dataPointGroup.getGroupByResult();
+        List<GroupByResult> modifiedGroupBys = groupBys.stream().map(this::convert).collect(Collectors.toList());
         return new GroupByDataPointGroup(dataPointGroup, modifiedGroupBys);
     }
 
     private GroupByResult convert(GroupByResult groupBy) {
         if (groupBy instanceof TagGroupByResult) {
-            var tagGroupBy = (TagGroupByResult) groupBy;
+            TagGroupByResult tagGroupBy = (TagGroupByResult) groupBy;
             tagGroupBy.getTagResults().replaceAll(actionFunction);
             return tagGroupBy;
         } else {
